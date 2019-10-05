@@ -13,6 +13,8 @@ $(function () {
   $.get(url, function (data) {
     if (data.status === 'OK') {
       $('#api_status').addClass('available');
+    } else {
+      $('#api_status').removeClass('available');
     }
   });
 });
